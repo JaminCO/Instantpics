@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Services
+{% endblock title %}
+
+
+
+{% block content %}
+<div class="ui fluid card">
+    <h1 class="ui title">About us</h1>
+    <p>
+        Instant-Pics Is a social network which helps humans communicate their feelings and ideas through Images.
+    </p>
+</div>
+<div class="ui segment">
+    <H1>REGISTER AND LOGIN TODAY</H1>
+    <p>Join Us today to be part of a large community</p>
+    <button class="ui button primary"><a href="{% url 'account_signup'%}" class="ui item"></a>Sign Up</button>
+    <button class="ui button primary"><a href="{% url 'account_login'%}" class="ui item"></a>Sign In</button>
+</div>
+{% endblock content %}
